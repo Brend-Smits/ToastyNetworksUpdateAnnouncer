@@ -9,7 +9,7 @@ namespace ToastyNetworksUpdateAnnouncer
         private string User = "";
         private string Password = "";
 
-        public MySqlConnection ConnectionString()
+        public MySqlConnection ConnectionString() 
         {
             return new MySqlConnection($"Server={Server};Database={Database};UID={User};Password={Password};SslMode=none");
         }
